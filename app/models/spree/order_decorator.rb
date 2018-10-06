@@ -12,7 +12,7 @@ Spree::Order.class_eval do
     end
   end
 
-  alias_method :finalize_without_gift_card, :finalize!
+  alias_method :finalize_without_gift_card!, :finalize!
   alias_method :finalize!, :finalize_with_gift_card!
 
   # Tells us if there is the specified gift code already associated with the order
